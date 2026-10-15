@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Phonuxe - Protection d'écran pour iPhone, Samsung et Xiaomi/Redmi. Commande en gros au meilleur prix.">
+  <title>Phonuxe | Protection d'écran</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="brand" aria-label="Phonuxe accueil">
+      <img src="phonuxe_logo-removebg-preview.png" alt="PHONUXE" class="logo-img">
+      <span>PHON<span class="brand-accent">UXE</span>
+        <small>SCREEN PROTECTION</small>
+      </span>
+    </a>
+    <a class="header-contact" href="https://wa.me/212666116382" target="_blank" rel="noopener">
+      <span class="online-dot"></span>
+      Contact WhatsApp
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">PROTECTION • QUALITÉ • PRIX DE GROS</span>
+        <h1>حمي الشاشة.<br><span>وربح أكثر.</span></h1>
+        <p>
+          اختار موديلات الهواتف اللي محتاج، حدد الكمية،
+          وخذ الثمن المناسب حسب مجموع طلبك.
+        </p>
+        <a href="#catalog" class="primary-btn">اكتشف الموديلات <span>←</span></a>
+        <div class="hero-points">
+          <span>✓ أثمنة واضحة</span>
+          <span>✓ طلب سهل</span>
+          <span>✓ توصيل للمنزل</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Phonuxe screen protection">
+        <div class="glow"></div>
+        <div class="phone phone-back">
+          <div class="camera camera-one"></div>
+          <div class="camera camera-two"></div>
+          <div class="camera camera-three"></div>
+        </div>
+        <div class="phone phone-front">
+          <div class="phone-notch"></div>
+          <div class="screen-shine"></div>
+          <div class="phone-mark">P</div>
+        </div>
+        <div class="floating-label">GLASS<br><strong>PROTECTION</strong></div>
+      </div>
+    </section>
+
+    <section class="price-strip">
+      <div class="price-info">
+        <span class="price-icon">01</span>
+        <div><strong>من 10 حتى 490 وحدة</strong><small>ثمن الوحدة</small></div>
+        <b>5 DH</b>
+      </div>
+      <div class="price-info featured-price">
+        <span class="price-icon">02</span>
+        <div><strong>من 500 وحدة وطالع</strong><small>ثمن الوحدة</small></div>
+        <b>4.50 DH</b>
+      </div>
+      <p class="price-note">الثمن كيتحدد حسب مجموع الكمية ديال جميع الموديلات.</p>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+      <div class="section-heading">
+        <span class="eyebrow">NOTRE CATALOGUE</span>
+        <h2>اختار الموديلات ديالك</h2>
+        <p>الكمية كتزاد وتنقص بمضاعفات 10.</p>
+      </div>
+
+      <div class="catalog-tools">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search"
+            placeholder="قلب على موديل الهاتف..." autocomplete="off">
+        </label>
+        <span id="modelCount" class="model-count"></span>
+      </div>
+
+      <div class="brand-tabs" role="group" aria-label="اختيار الماركة">
+        <button class="brand-tab active" data-brand="all" type="button">الكل</button>
+        <button class="brand-tab" data-brand="samsung" type="button">Samsung</button>
+        <button class="brand-tab" data-brand="xiaomi" type="button">Xiaomi / Redmi</button>
+        <button class="brand-tab" data-brand="iphone" type="button">iPhone</button>
+      </div>
+
+      <div id="catalogGroups" class="catalog-groups">
+        <p class="loading-message">جاري تحميل الموديلات...</p>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-heading">
+        <span class="eyebrow">VOTRE COMMANDE</span>
+        <h2>ملخص الطلب</h2>
+        <p>راجع الكميات والثمن قبل ما تكمل الطلب.</p>
+      </div>
+
+      <div class="order-layout">
+        <div class="cart-panel">
+          <div class="panel-title">
+            <h3>الموديلات المختارة</h3>
+            <button id="clearCart" class="text-btn" type="button">مسح الكل</button>
+          </div>
+
+          <div id="cartItems" class="cart-items">
+            <div class="empty-cart">
+              <span>＋</span>
+              <p>مازال ما اخترتي حتى موديل.</p>
+              <small>رجع للائحة وزيد الكميات اللي محتاج.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-panel">
+          <h3>معلومات التوصيل</h3>
+
+          <form id="orderForm">
+            <label class="field">
+              الاسم الكامل
+              <input type="text" id="customerName" required
+                maxlength="80" placeholder="الاسم الكامل">
+            </label>
+
+            <label class="field">
+              رقم الهاتف
+              <input type="tel" id="customerPhone" required
+                maxlength="20" placeholder="06XXXXXXXX">
+            </label>
+
+            <label class="field">
+              المدينة
+              <input type="text" id="customerCity" required
+                maxlength="80" placeholder="مثلاً: Salé">
+            </label>
+
+            <label class="field">
+              العنوان بالتفصيل
+              <textarea id="customerAddress" required
+                maxlength="300" rows="2"
+                placeholder="الحي، الزنقة، رقم المنزل..."></textarea>
+            </label>
+
+            <div class="summary-line">
+              <span>مجموع الوحدات</span>
+              <strong id="totalQuantity">0</strong>
+            </div>
+            <div class="summary-line">
+              <span>ثمن الوحدة</span>
+              <strong id="unitPrice">5.00 DH</strong>
+            </div>
+            <div class="summary-line total-line">
+              <span>المجموع الإجمالي</span>
+              <strong id="grandTotal">0.00 DH</strong>
+            </div>
+
+            <p id="priceHint" class="price-hint">
+              زيد الكمية حتى 500 وحدة باش تستافد من ثمن 4.50 DH.
+            </p>
+
+            <button type="submit" id="submitOrder" class="whatsapp-btn">
+              <span>◉</span> تأكيد الطلب عبر WhatsApp
+            </button>
+            <p class="form-note">
+              غادي يتحل WhatsApp برسالة فيها تفاصيل الطلب. خاصك تضغط على إرسال من داخل WhatsApp.
+            </p>
+            <p id="formMessage" class="form-message" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+  <div class="footer-main">
+    <a class="brand footer-brand" href="#">
+      <img src="phonuxe_logo-removebg-preview.png" alt="PHONUXE" class="logo-img">
+      <span>PHONUXE<small>SCREEN PROTECTION</small></span>
+    </a>
+    <p>حماية شاشات الهواتف، بطريقة مختلفة.</p>
+  </div>
+  <div class="footer-socials">
+    <span>تابعنا</span>
+    <!-- بدّل # بروابط حساباتك الحقيقية -->
+    <a href="https://www.facebook.com/share/1BtXJQjEoj/?mibextid=wwXIfr" aria-label="Facebook" title="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@phonuxe1?_r=1&_t=ZS-9ATKM5ywYNg" aria-label="TikTok" title="TikTok">
+      <svg viewBox="0 0 24 24"><path d="M14 3v11a4 4 0 1 1-4-4c.4 0 .7 0 1 .1V6a8 8 0 1 0 7 8V9c1.5 1.1 3 1.6 4 1.7V7c-3-.2-5-2-5-4h-3Z"/></svg>
+    </a>
+    <a href="https://wa.me/212666116382" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+      <svg viewBox="0 0 32 32"><path d="M16 3.1A12.7 12.7 0 0 0 5.1 22.3L3.4 28.5l6.4-1.7A12.8 12.8 0 1 0 16 3.1Zm0 23.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.8 1 1-3.7-.3-.4A10.4 10.4 0 1 1 16 26.2Z"/></svg>
+    </a>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> PHONUXE. جميع الحقوق محفوظة.</span>
+    <span>PROTECT WHAT MATTERS.</span>
+  </div>
+</footer>
+
+
+</body>
+</html>
